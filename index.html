@@ -299,23 +299,31 @@
             position: fixed;
             z-index: 2000;
             left: 0;
-            top: 0;
+            top: 13%;
             width: 100%;
             height: 100%;
             background: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(5px);
+            overflow-y: auto;
+            overflow-x: hidden;
+            padding: 1rem;
         }
 
         .modal-content {
             background: var(--dark);
-            margin: 5% auto;
-            padding: 2rem;
+            margin: 2rem auto;
+            padding: 1rem;
             border-radius: 20px;
-            width: 90%;
+            width: 100%;
             max-width: 600px;
+            max-height: 400px;
             position: relative;
             animation: slideIn 0.3s ease;
+            overflow-y: auto;
+            overflow-x: hidden;
+            box-sizing: border-box;
         }
+
 
         @keyframes slideIn {
             from { opacity: 0; transform: translateY(-50px); }
@@ -344,7 +352,7 @@
 
         .package h4 {
             color: var(--primary);
-            margin-bottom: 0.5rem;
+            
         }
 
         .price {
@@ -740,7 +748,7 @@
     <div id="couchModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('couch')">&times;</span>
-            <h2>🛋️ Couch Cleaning Services</h2>
+            <h2>Couch Cleaning Services</h2>
             <p>Professional deep cleaning for all types of upholstery and furniture.</p>
             
             <div class="package">
@@ -783,7 +791,7 @@
     <div id="residentialModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('residential')">&times;</span>
-            <h2>🏠 Residential Home Cleaning</h2>
+            <h2> Residential Home Cleaning</h2>
             <p>Complete home cleaning solutions tailored to your space and needs.</p>
             
             <div class="package">
@@ -826,7 +834,7 @@
     <div id="windowModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('window')">&times;</span>
-            <h2>🪟 Glass & Window Cleaning</h2>
+            <h2>Glass & Window Cleaning</h2>
             <p>Professional streak-free cleaning for all your glass surfaces.</p>
             
             <div class="package">
