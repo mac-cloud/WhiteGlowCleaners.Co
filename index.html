@@ -307,6 +307,9 @@
             overflow-y: auto;
             overflow-x: hidden;
             padding: 1rem;
+            justify-content: center;
+            align-items: center;
+           
         }
 
         .modal-content {
@@ -1131,13 +1134,13 @@
         function openModal(service) {
             const modal = document.getElementById(service + 'Modal');
             modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
+           
         }
 
         function closeModal(service) {
             const modal = document.getElementById(service + 'Modal');
             modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            
         }
 
         // Close modal when clicking outside
